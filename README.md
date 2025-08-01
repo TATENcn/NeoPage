@@ -7,13 +7,19 @@
 ## 文件结构
 
 ```
-project/
-├── config.json          # 个人信息配置文件
-├── config-loader.js     # 配置加载器脚本
-├── index.html           # 主页
-├── friend.html          # 友链页面
-├── links.html           # 网站链接页面
-└── copyright.html       # 版权声明页面
+personal-website/
+├── index.html, friend.html, links.html, copyright.html
+├── config.json
+├── css/
+│   ├── common.css     # 通用样式（侧边栏、主题、基础样式）
+│   ├── index.css      # 主页特定样式
+│   ├── friend.css     # 友链页面特定样式
+│   ├── links.css      # 链接页面特定样式
+│   └── copyright.css  # 版权页面特定样式
+└── js/
+    ├── config-loader.js  # 配置加载器
+    ├── theme.js         # 主题切换功能
+    └── common.js        # 通用脚本和工具函数
 ```
 
 ## 使用方法
