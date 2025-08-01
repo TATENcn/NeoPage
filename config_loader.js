@@ -147,13 +147,18 @@ class ConfigLoader {
             introTexts[2].textContent = personal.description.additional;
         }
 
-        // 设置特长特点
-        const skillCards = document.querySelectorAll('.skill-card h3');
-        if (personal.characteristics && skillCards.length > 0) {
-            personal.characteristics.forEach((skill, index) => {
-                if (skillCards[index]) {
-                    skillCards[index].textContent = skill;
-                }
+        // 动态生成特长特点卡片
+        const skillCardsContainer = document.querySelector('.skills-container, .skills-grid, .skills-list');
+        if (personal.characteristics && skillCardsContainer) {
+            // 清空原有内容
+            skillCardsContainer.innerHTML = '';
+            personal.characteristics.forEach(skill => {
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                const h3 = document.createElement('h3');
+                h3.textContent = skill;
+                card.appendChild(h3);
+                skillCardsContainer.appendChild(card);
             });
         }
 
