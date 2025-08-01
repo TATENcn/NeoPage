@@ -41,8 +41,8 @@ body {
 }
 
 .container {
-    max-width: none;
-    margin: 0;
+    max-width: 1200px; /* LINMOHAN */
+    margin: 0 auto;
     padding: 0;
     display: flex;
     gap: 0;
@@ -79,11 +79,11 @@ body {
 }
 
 .main-content {
-    margin-left: 320px;
+    margin-left: 300px; /* LINMOHAN */
     flex: 1;
     min-height: 100vh;
     padding: 20px;
-    width: calc(100vw - 320px);
+    width: auto; /* 去掉 calc(100vw - 320px)，LINMOHAN */
 }
 
 .card {
