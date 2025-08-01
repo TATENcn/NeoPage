@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - 世界已崩坏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      position: relative;
+      color: #ff3c3c;
+      text-shadow: 0 0 5px #ff3c3c;
+      animation: glitch 1s infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 2rem;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+      border-bottom: 1px dashed #00bfff;
+    }
+
+    a:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+
+    @keyframes glitch {
+      0% {
+        text-shadow: 2px 0 red, -2px 0 cyan;
+        transform: none;
+      }
+      20% {
+        text-shadow: -2px -2px magenta, 2px 2px lime;
+        transform: translate(1px, -1px);
+      }
+      40% {
+        text-shadow: 2px 2px blue, -2px -2px red;
+        transform: translate(-1px, 1px);
+      }
+      60% {
+        text-shadow: -1px 1px yellow, 1px -1px green;
+        transform: translate(1px, 1px);
+      }
+      80% {
+        text-shadow: 1px -1px orange, -1px 1px cyan;
+        transform: translate(-1px, -1px);
+      }
+      100% {
+        text-shadow: 2px 0 red, -2px 0 cyan;
+        transform: none;
+      }
+    }
+
+    .scanlines {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="scanlines"></div>
+  <h1>404</h1>
+    <p>你所寻找的页面已经被黑暗吞噬，或者根本就不存在。<br>也许是次元裂缝，也许只是你手滑了。</p>
+  <p>回到 <a href="/">现实世界</a> ，在一切还没崩坏之前。</p>
+  <div class="footer">
+        <p>Made by <a href = "https://github.com/Yaten-Z">Yaten-Z</a></p>
+    </div>
+</body>
+</html>

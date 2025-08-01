@@ -1,122 +1,76 @@
 {
   "personal": {
-    "name": "Your Name", 
+    "name": "你的名字",
     "englishName": "Your English Name",
-    "otherNames": ["Your Other Name 1", "Your Other Name 2"],
-    "title": "Your motto or title",
+    "title": "你的简介",
     "avatar": "https://s1.imagehub.cc/images/2025/07/30/93b3e11a33c2741a3e254bccabb47739.jpg",
     "avatarFallback": "👨‍💻",
     "description": {
-      "short": "This is a short description about you.Your interests, hobbies, or what you do.",
-      "detail": "This is a detailed description about you. You can include your background, interests, and what you are passionate about. Feel free to add more details about your skills, experiences, or any other information that you think is relevant.",
-      "additional": "This is an additional section where you can include more information about yourself, such as your achievements, projects, or anything else that you would like to share with others."
+      "paragraphs": [
+        "天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。寒来暑往，秋收冬藏。云腾致雨，露结为霜。金生丽水，玉出昆冈。剑号巨阙，珠称夜光。果珍李柰，菜重芥姜。海咸河淡，鳞潜羽翔。",
+        "春有百花秋有月，夏有凉风冬有雪。文章千古事，得失寸心知。纸上得来终觉浅，绝知此事要躬行。",
+        "这是一段用于测试中文页面排版效果的示例文字。文字内容无特定含义，旨在展示不同字体、字号、行距与段落间距下的整体视觉效果。通过这些模拟文本，设计师可以更直观地观察页面在实际内容填充后的排版表现。",
+        "在现代网页设计中，良好的中文排版不仅有助于提升阅读体验，还能增强页面的整体美感与专业感。尤其在响应式布局中，合理的段落宽度与行间距设定，对于不同终端的适配性至关重要。",
+        "中文文字通常采用从上到下、从左到右的排版方式，字符之间不需空格，但段落之间宜保持适当的间距，以免视觉疲劳。行高建议设置为字体大小的 1.5 倍到 1.8 倍，以提升可读性。",
+        "你可以自由添加段落。"
+      ]
+    },
+    "about": {
+      "paragraphs": [
+        "天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。寒来暑往，秋收冬藏。云腾致雨，露结为霜。金生丽水，玉出昆冈。剑号巨阙，珠称夜光。果珍李柰，菜重芥姜。海咸河淡，鳞潜羽翔。",
+        "春有百花秋有月，夏有凉风冬有雪。文章千古事，得失寸心知。纸上得来终觉浅，绝知此事要躬行。",
+        "这是一段用于测试中文页面排版效果的示例文字。文字内容无特定含义，旨在展示不同字体、字号、行距与段落间距下的整体视觉效果。通过这些模拟文本，设计师可以更直观地观察页面在实际内容填充后的排版表现。",
+        "在现代网页设计中，良好的中文排版不仅有助于提升阅读体验，还能增强页面的整体美感与专业感。尤其在响应式布局中，合理的段落宽度与行间距设定，对于不同终端的适配性至关重要。",
+        "中文文字通常采用从上到下、从左到右的排版方式，字符之间不需空格，但段落之间宜保持适当的间距，以免视觉疲劳。行高建议设置为字体大小的 1.5 倍到 1.8 倍，以提升可读性。",
+        "你可以自由添加段落。"
+      ]
     },
     "characteristics": [
-      "（不）爱学习",
-      "数学不好",
-      "物理不好",
-      "化学不好",
-      "啥都不好",
-      "XXXXXXX"
+      "热爱编程",
+      "数学不错",
+      "爱交朋友",
+      "经常看番",
+      "喜欢猫咪",
+      "喜欢旅行",
+      "喜欢摄影",
+      "喜欢音乐"
     ]
   },
   "contact": {
-    "email": "XXXXXX@example.com",
-    "qq": "Your qq number",
-    "github": "github.com/XXXXXXXXXXXXXX"
+    "email": "example@example.com",
+    "qq": "你的 QQ 号",
+    "github": "github.com/example"
   },
-  "links": { 
-    "blog": "https://XXXXXXXXXXXXXXXX",
-    "homepage": "https://XXXXXXXXXXXXXXXX",
-    "blogName": "Your Blog Name",
+  "links": {
+    "blog": "https://example.com",
+    "homepage": "https://example.com",
+    "blogName": "此处填写您的博客名称",
     "personalBlog": {
-      "name": "Your Blog Name",
-      "url": "https://XXXXXXXXXXXXXXXXXX",
-      "description": "Your blog description goes here."
+      "name": "此处填写您的博客名称",
+      "url": "https://example.com",
+      "description": "此处填写您的博客描述"
     }
   },
   "friends": [
     {
-      "For Example": "You can cancel out the previous line",
       "name": "技研录",
-      "url": "https://linmohan.fun/",
+      "url": "https://linmohan.fun",
       "avatar": "https://s1.imagehub.cc/images/2025/05/23/b96c20ef502e4dfaab9bdf6d57c7418f.png",
       "description": "「代码重构世界，逻辑解构真理」"
+    },
+    {
+      "name": "HHYYYY",
+      "url": "https://hhyyyy.cn",
+      "avatar": "https://s1.imagehub.cc/images/2025/07/31/1fe122170bc941cc696119b9aaca6ead.jpg",
+      "description": "用科技之眼探索世界，用光影之笔记录瞬间"
     }
   ],
-  "otherLinks": {
-    "For Example": "You can cancel out the previous line",
-    "friendsBlogs": [
-      {
-        "name": "叶子 - 主页",
-        "url": "https://www.lgcm.xyz/",
-        "description": "半个软件工程师"
-      },
-      {
-        "name": "GuYang17",
-        "url": "https://guyang17.github.io/",
-        "description": "编程爱好者 | Minecraft玩家"
-      },
-      {
-        "name": "LINMOH - 主页",
-        "url": "https://home.linmohan.fun/",
-        "description": "「代码重构世界，逻辑解构真理」"
-      },
-      {
-        "name": "HungryHenry",
-        "url": "https://hungryhenry.cn/",
-        "description": "不是在写bug就是在debug🐛"
-      },
-      {
-        "name": "Errorsia",
-        "url": "https://errorsia.com/",
-        "description": ""
-      },
-      {
-        "name": "HHYYYY",
-        "url": "https://hhyyyy.cn/",
-        "description": "用科技之眼探索世界 <br>用光影之笔记录瞬间"
-      },
-      {
-        "name": "Ruibin_Ningh",
-        "url": "https://www.ruibin-ningh.top/",
-        "description": "不争于表象，只专于底层"
-      },
-      {
-        "name": "Zyx_2012",
-        "url": "https://blog.zyx-2012.cn",
-        "description": "专注于笔记、分享的博客"
-      }
-    ],
-    "otherPages": [
-      {
-        "For Example": "You can cancel out the previous line",
-        "name": "TATEN | 官网",
-        "url": "https://taten.xyz",
-        "description": "计算机科学交流团队"
-      }
-    ],
-    "moreExplore": [
-      {
-        "name": "版权声明",
-        "url": "./copyright.html",
-        "description": "Copyright Information"
-      },
-      {
-        "name": "XXXXXX | GitHub",
-        "url": "https://github.com/XXXXXX",
-        "description": "给个 Follow & Star 吧"
-      },
-      {
-        "name": "Email",
-        "url": "mailto:XXXXXXX@example.com",
-        "description": "有什么想说的就发邮件吧"
-      }
-    ]
+  "friendPage": {
+    "intro": "常回来玩！"
   },
   "meta": {
-    "copyright": "© 2025 XXXXXX. All rights reserved.",
+    "copyright": "© 2025 Your name. All rights reserved.",
     "copyrightLink": "./copyright.html",
-    "lastUpdated": "20XX年XX月XX日"
+    "lastUpdated": "2025年8月1日"
   }
 }

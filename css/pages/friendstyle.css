@@ -25,6 +25,19 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -274,94 +287,72 @@ body {
     transition: color 0.3s ease;
 }
 
-.skills-grid {
+.friend-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
     margin-top: 20px;
 }
 
-.skill-card {
+.friend-card {
     background: var(--bg-secondary);
-    color: var(--text-primary);
-    padding: 20px 15px;
     border-radius: 16px;
-    text-align: center;
-    transition: all 0.3s ease;
-    min-height: 100px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
     border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-primary);
 }
 
-.skill-card:hover {
+.friend-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(79, 154, 255, 0.15);
     border-color: var(--accent-color);
 }
 
-.skill-icon {
-    font-size: 1.8em;
-    margin-bottom: 8px;
-    display: block;
+.friend-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    transition: transform 0.3s ease;
 }
 
-.skill-card h3 {
-    font-size: 1em;
-    margin: 0;
+.friend-card:hover .friend-avatar {
+    transform: scale(1.1);
 }
 
-.skill-card p {
-    display: none;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.contact-item {
-    background: var(--bg-secondary);
-    padding: 20px;
-    border-radius: 16px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
+.friend-info {
+    flex: 1;
     color: var(--text-primary);
 }
 
-.contact-item:hover {
-    background: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(79, 154, 255, 0.25);
-}
-
-.contact-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-    display: block;
+.friend-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
     color: var(--accent-color);
     transition: color 0.3s ease;
 }
 
-.contact-item:hover .contact-icon {
-    color: white;
-}
-
-.contact-item h3 {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-}
-
-.contact-item p {
+.friend-url {
     font-size: 0.9em;
-    opacity: 0.8;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.friend-description {
+    font-size: 0.95em;
+    color: var(--text-secondary);
+    opacity: 0.9;
+    line-height: 1.4;
+    transition: color 0.3s ease;
 }
 
 .footer {
@@ -390,6 +381,7 @@ body {
         height: auto;
         margin-bottom: 20px;
     }
+    
     .main-content {
         margin-left: 0;
         width: 100%;
@@ -410,8 +402,7 @@ body {
         padding: 30px 20px;
     }
     
-    .skills-grid,
-    .contact-grid {
+    .friend-links-grid {
         grid-template-columns: 1fr;
     }
 }
