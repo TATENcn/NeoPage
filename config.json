@@ -1,0 +1,171 @@
+{
+  "personal": {
+    "name": "风与路人",
+    "englishName": "Yaten-Z",
+    "otherNames": ["Vlexander"],
+    "title": "等那场风，等那个你",
+    "avatar": "https://s1.imagehub.cc/images/2025/05/30/55439681d8b3c2d988638c133e160a56.jpg",
+    "avatarFallback": "👨‍💻",
+    "description": {
+      "short": "Hello啊！我是 风与路人。在网上，我用\"风与路人\"、\"Yaten-Z\"、\"Vlexander\"等名字遨游。",
+      "detail": "现在我是一名初三学生，平时喜欢编程、阅读和发癫。我对技术充满热情，尤其是 OI 和 Web。",
+      "additional": "如果你想要看看我的杰作，可以看看blog。想认识比我优质INF倍的bloger们，可以看看友链。还想看看我有多猎奇？可以看看关于。"
+    },
+    "characteristics": [
+      "文静",
+      "内向", 
+      "善于思考",
+      "善于倾听",
+      "捣鼓电脑",
+      "（不）爱学习",
+      "数学不好",
+      "物理不好"
+    ]
+  },
+  "contact": {
+    "email": "Yaten-Z@outlook.com",
+    "qq": "2635802854",
+    "github": "github.com/Yaten-Z",
+    "messageBoard": "https://blog.yaten.xyz/comment/"
+  },
+  "links": {
+    "blog": "https://blog.yaten.xyz",
+    "homepage": "https://yaten.xyz/",
+    "blogName": "「落鲸」",
+    "personalBlog": {
+      "name": "逻技簿",
+      "url": "https://blog.yaten.xyz",
+      "description": "「用符号雕刻时间，用逻辑照亮未知」"
+    }
+  },
+  "friends": [
+    {
+      "name": "技研录",
+      "url": "https://linmohan.fun/",
+      "avatar": "https://s1.imagehub.cc/images/2025/05/23/b96c20ef502e4dfaab9bdf6d57c7418f.png",
+      "description": "「代码重构世界，逻辑解构真理」"
+    },
+    {
+      "name": "枫叶",
+      "url": "https://blog.aqcoder.cn",
+      "avatar": "https://blog.aqcoder.cn/img/avatar.png",
+      "description": "分享知识，认识世界"
+    },
+    {
+      "name": "寻梦城",
+      "url": "https://blog.study996.cn/",
+      "avatar": "https://q2.qlogo.cn/headimg_dl?dst_uin=2071916845&spec=640",
+      "description": "欲买桂花同载酒，终不似，少年游"
+    },
+    {
+      "name": "Jerry Zhou",
+      "url": "https://blog.jerryz.com.cn/",
+      "avatar": "https://img.examcoo.com/ask/7386438/202111/163626915705190.jpg",
+      "description": "永远相信美好的事情即将发生"
+    },
+    {
+      "name": "XingJiのBlog",
+      "url": "https://love.xingji.fun/",
+      "avatar": "https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg",
+      "description": "迄今所有人生都大写着失败，但不妨碍我继续向前✨"
+    }
+  ],
+  "otherLinks": {
+    "friendsBlogs": [
+      {
+        "name": "叶子 - 主页",
+        "url": "https://www.lgcm.xyz/",
+        "description": "半个软件工程师"
+      },
+      {
+        "name": "GuYang17",
+        "url": "https://guyang17.github.io/",
+        "description": "编程爱好者 | Minecraft玩家"
+      },
+      {
+        "name": "LINMOH - 主页",
+        "url": "https://home.linmohan.fun/",
+        "description": "「代码重构世界，逻辑解构真理」"
+      },
+      {
+        "name": "HungryHenry",
+        "url": "https://hungryhenry.cn/",
+        "description": "不是在写bug就是在debug🐛"
+      },
+      {
+        "name": "Errorsia",
+        "url": "https://errorsia.com/",
+        "description": ""
+      },
+      {
+        "name": "HHYYYY",
+        "url": "https://hhyyyy.cn/",
+        "description": "用科技之眼探索世界 <br>用光影之笔记录瞬间"
+      },
+      {
+        "name": "Ruibin_Ningh",
+        "url": "https://www.ruibin-ningh.top/",
+        "description": "不争于表象，只专于底层"
+      },
+      {
+        "name": "Zyx_2012",
+        "url": "https://blog.zyx-2012.cn",
+        "description": "专注于笔记、分享的博客"
+      }
+    ],
+    "otherPages": [
+      {
+        "name": "TATEN | 官网",
+        "url": "https://taten.xyz",
+        "description": "计算机科学交流团队"
+      },
+      {
+        "name": "书库",
+        "url": "https://yaten.xyz/book.html",
+        "description": "知识的殿堂（啥也没有）"
+      },
+      {
+        "name": "Support me",
+        "url": "https://yaten.xyz/pay.html",
+        "description": "给我点杯咖啡☕"
+      },
+      {
+        "name": "友链",
+        "url": "https://yaten.xyz/link",
+        "description": "Be Friend Forever"
+      },
+      {
+        "name": "实用链接收藏",
+        "url": "https://yaten.xyz/useful-links.html",
+        "description": "Useful And Fast"
+      }
+    ],
+    "moreExplore": [
+      {
+        "name": "版权声明",
+        "url": "https://yaten.xyz/copyright.html",
+        "description": "Copyright Information"
+      },
+      {
+        "name": "Yaten-Z | GitHub",
+        "url": "https://github.com/Yaten-Z",
+        "description": "给个 Follow & Star 吧"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:Yaten-Z@outlook.com",
+        "description": "有什么想说的就发邮件吧"
+      },
+      {
+        "name": "时间线 | Blog",
+        "url": "https://blog.yaten.xyz/archives/",
+        "description": "为数不多的高质量文章qwp"
+      }
+    ]
+  },
+  "meta": {
+    "copyright": "© 2025 风与路人",
+    "copyrightLink": "https://yaten.xyz/copyright.html",
+    "lastUpdated": "2025年7月13日"
+  }
+}
