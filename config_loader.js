@@ -63,6 +63,9 @@ class ConfigLoader {
             case 'copyright':
                 this.applyCopyrightPageConfig();
                 break;
+            case 'about':
+                this.applyAboutPageConfig();
+                break;
         }
 
         // 应用通用配置
@@ -81,6 +84,8 @@ class ConfigLoader {
             return 'links';
         } else if (filename.includes('copyright')) {
             return 'copyright';
+        } else if (filename.includes('about')) {
+            return 'about';
         }
         return 'unknown';
     }
@@ -105,6 +110,9 @@ class ConfigLoader {
                     break;
                 case 'copyright':
                     pageName = '声明';
+                    break;
+                case 'about':
+                    pageName = '关于';
                     break;
                 default:
                     pageName = '页面';
@@ -140,26 +148,37 @@ class ConfigLoader {
         const { personal, contact } = this.config;
 
         // 设置个人介绍文本
-        const introTexts = document.querySelectorAll('.intro-text');
-        if (introTexts.length >= 3) {
-            introTexts[0].textContent = personal.description.short;
-            introTexts[1].textContent = personal.description.detail;
-            introTexts[2].textContent = personal.description.additional;
+        const introHeading = Array.from(document.querySelectorAll('.main-content .section h2')).find(h2 => h2.textContent.trim() === '个人介绍');
+        if (introHeading) {
+            const introSection = introHeading.parentElement;
+            const existingParagraphs = introSection.querySelectorAll('p');
+            existingParagraphs.forEach(p => p.remove());
+
+            if (personal.description && personal.description.paragraphs) {
+                personal.description.paragraphs.forEach(p_text => {
+                    const p = document.createElement('p');
+                    p.className = 'intro-text';
+                    p.textContent = p_text;
+                    introSection.appendChild(p);
+                });
+            }
         }
 
         // 动态生成特长特点卡片
-        const skillCardsContainer = document.querySelector('.skills-container, .skills-grid, .skills-list');
-        if (personal.characteristics && skillCardsContainer) {
-            // 清空原有内容
-            skillCardsContainer.innerHTML = '';
-            personal.characteristics.forEach(skill => {
-                const card = document.createElement('div');
-                card.className = 'skill-card';
-                const h3 = document.createElement('h3');
-                h3.textContent = skill;
-                card.appendChild(h3);
-                skillCardsContainer.appendChild(card);
-            });
+        const skillsHeading = Array.from(document.querySelectorAll('.main-content .section h2')).find(h2 => h2.textContent.trim() === '特长与特点');
+        if (skillsHeading) {
+            const skillsGrid = skillsHeading.nextElementSibling;
+            if (skillsGrid && personal.characteristics) {
+                skillsGrid.innerHTML = '';
+                personal.characteristics.forEach(skill => {
+                    const card = document.createElement('div');
+                    card.className = 'skill-card';
+                    const h3 = document.createElement('h3');
+                    h3.textContent = skill;
+                    card.appendChild(h3);
+                    skillsGrid.appendChild(card);
+                });
+            }
         }
 
         // 设置联系方式
@@ -183,17 +202,34 @@ class ConfigLoader {
         }
     }
 
+    applyAboutPageConfig() {
+        const { personal } = this.config;
+
+        // 设置个人介绍文本
+        const aboutHeading = Array.from(document.querySelectorAll('.main-content .section h2')).find(h2 => h2.textContent.trim() === '个人介绍');
+        if (aboutHeading) {
+            const aboutSection = aboutHeading.parentElement;
+            const existingParagraphs = aboutSection.querySelectorAll('p');
+            existingParagraphs.forEach(p => p.remove());
+
+            if (personal.about && personal.about.paragraphs) {
+                personal.about.paragraphs.forEach(p_text => {
+                    const p = document.createElement('p');
+                    p.className = 'about-intro-text';
+                    p.textContent = p_text;
+                    aboutSection.appendChild(p);
+                });
+            }
+        }
+    }
+
     applyFriendPageConfig() {
-        const { friends, contact } = this.config;
+        const { friends, contact, friendPage } = this.config;
 
         // 设置友链介绍文本
         const introText = document.querySelector('.intro-text');
-        if (introText) {
-            introText.innerHTML = `
-                如果你想要交换友链，请通过邮件联系我：<a href="mailto:${contact.email}">${contact.email}</a>
-                <br>请在邮件中注明你的博客地址、网站名称、网站图标（或头像）以及介绍，我会尽快添加到这里。
-                <br>这里属于友情链接哦！如果你是我的朋友，会同步添加到我的 <a href="links.html">网站</a> 页面。
-            `;
+        if (introText && friendPage && friendPage.intro) {
+            introText.innerHTML = friendPage.intro.replace(/{email}/g, contact.email);
         }
 
         // 生成友链列表
