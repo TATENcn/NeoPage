@@ -36,6 +36,8 @@ Home-Pages/
 
 ## 2.使用方法
 
+<a href="https://github.com/TATENcn/Home-Pages/blob/main/HowToDeployToGithubPages.md" h3>单击这里来查看如何部署至GithubPages </a>
+
 ### Step 0. importantce
 
 请给我们的项目点上一个 Star，这对我们来说真的很重要
