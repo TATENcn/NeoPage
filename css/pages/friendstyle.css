@@ -25,6 +25,19 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,8 +54,8 @@ body {
 }
 
 .container {
-    max-width: none;
-    margin: 0;
+    max-width: 1200px; /* LINMOHAN */
+    margin: 0 auto;
     padding: 0;
     display: flex;
     gap: 0;
@@ -79,11 +92,11 @@ body {
 }
 
 .main-content {
-    margin-left: 320px;
+    margin-left: 300px; /* LINMOHAN */
     flex: 1;
     min-height: 100vh;
     padding: 20px;
-    width: calc(100vw - 320px);
+    width: auto; /* 去掉 calc(100vw - 320px)，LINMOHAN */
 }
 
 .card {
