@@ -130,7 +130,13 @@ class ConfigLoader {
                 avatarImg.parentElement.innerHTML = personal.avatarFallback;
             };
         }
-
+        
+        // 设置动态 favicon
+        const favicon = document.getElementById('dynamic-favicon');
+          if (favicon && personal.avatar) {
+             favicon.href = personal.avatar;
+            }
+            
         // 设置名字
         const nameElements = document.querySelectorAll('.sidebar-name');
         nameElements.forEach(el => {
