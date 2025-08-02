@@ -21,6 +21,8 @@
 git clone https://github.com/TATENcn/Home-Pages.git
 ```
 
+或者在 [Releases 页面](https://github.com/TATENcn/NeoPage/releases)下载zip。
+
 ## 使用
 
 编辑 `config.json` 文件即可。
