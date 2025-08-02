@@ -15,12 +15,12 @@
 
 
 ### Step 2. 下拉仓库
-####1.通过Github Desktop
+1.通过Github Desktop
 ```bash
 1.如已安装Github Desktop，单击“Code”按钮，点击“Open With Github Desktop”，设置好存储库位置后单击Clone
 2.然后单击Open in XXX（你的IDE）
 ```
-####2.通过Git
+2.通过Git
 ```bash
 1.单击“Code”按钮，此时会出现Clone所需的地址（如https://github.com/XXX/Home-Pages.git）
 2.在合适的地方打开终端（推荐PowerShell7 或者 Git Bash），运行：
@@ -33,13 +33,13 @@
 编辑 `config.json` 文件即可：
 
 ### Step 4.提交更改
-####1.通过Github Desktop
+1.通过Github Desktop
 ```bash
 1.保存更改后的Json文件
 2.在GitHub Desktop的左下角单击Commit to main 
 3.等待提交后点击右侧的Push Origin
 ```
-####2.通过Git
+2.通过Git
 ```bash
 1.保存更改后的Json文件
 2.在存储库的根目录打开终端（推荐PowerShell7 或者 Git Bash），运行：
