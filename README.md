@@ -1,20 +1,3 @@
-<style>
-.spoiler-pretty {
-  color: transparent;
-  background-color: transparent;
-  text-shadow: 0 0 10px rgba(0,0,0,0.8);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  user-select: none;
-  filter: blur(2px);
-}
-.spoiler-pretty:hover {
-  color: #fff;
-  text-shadow: none;
-  filter: none;
-}
-</style>
-
 <div id="title" align=center>
 
 # NeoPage
@@ -23,11 +6,16 @@
 
 [TATEN 官网](https://taten.xyz) | [GitHub 主页](https://github.com/tatencn)
 
+<details>
+  <summary></summary>
+  请给我们的项目点上一个 Star，这对我们来说真的很重要！
+</details>
+
 </div>
 
-<span class="spoiler-pretty">请给我们的项目点上一个 Star，这对我们来说真的很重要！
+<span style="color: transparent; text-shadow: 0 0 5px rgba(0,0,0,0.5); user-select: none;">
+这是隐藏的文字
 </span>
-
 
 ## 安装
 
