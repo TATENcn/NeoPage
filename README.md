@@ -13,10 +13,6 @@
 
 </div>
 
-<span style="color: transparent; text-shadow: 0 0 5px rgba(0,0,0,0.5); user-select: none;">
-这是隐藏的文字
-</span>
-
 ## 安装
 
 确保您的电脑已经安装 Git。
