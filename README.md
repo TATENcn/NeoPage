@@ -31,7 +31,7 @@
 
 ## 安装
 
-确保你电脑装了 Git。
+确保您的电脑已经安装 Git。
 
 ```bash
 git clone https://github.com/TATENcn/Home-Pages.git
