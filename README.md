@@ -18,7 +18,7 @@
 确保您的电脑已经安装 Git。
 
 ```bash
-git clone https://github.com/TATENcn/Home-Pages.git
+https://github.com/TATENcn/NeoPage.git
 ```
 
 或者在 [Releases 页面](https://github.com/TATENcn/NeoPage/releases)下载zip。
